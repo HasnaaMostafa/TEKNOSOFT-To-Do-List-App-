@@ -1,13 +1,8 @@
 import 'package:flutter/material.dart';
 
 class AddTaskButton extends StatelessWidget {
-  const AddTaskButton(
-      {super.key,
-      required this.buttonName,
-      required this.onTap,
-      this.isLoading = false});
+  const AddTaskButton({super.key, required this.onTap, this.isLoading = false});
 
-  final String buttonName;
   final VoidCallback onTap;
   final bool isLoading;
 
@@ -41,10 +36,9 @@ class AddTaskButton extends StatelessWidget {
                             color: Colors.white,
                           ),
                         )
-                      : Text(
-                          buttonName,
-                          style: const TextStyle(
-                              color: Colors.white, fontSize: 14),
+                      : const Text(
+                          "",
+                          style: TextStyle(color: Colors.white, fontSize: 14),
                         )),
             ),
           )

@@ -60,9 +60,7 @@ class AddTaskViewBody extends StatelessWidget {
                     absorbing: state is AddTaskLoadingState ? true : false,
                     child: const SingleChildScrollView(
                         physics: BouncingScrollPhysics(),
-                        child: BuildTaskDetails(
-                          buttonName: "Create Task",
-                        )),
+                        child: BuildTaskDetails()),
                   );
                 }),
               ),

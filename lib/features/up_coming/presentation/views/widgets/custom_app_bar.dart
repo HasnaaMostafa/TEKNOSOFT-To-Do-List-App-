@@ -43,7 +43,9 @@ class CustomAppBar extends StatelessWidget {
                     BlocProvider.of<TaskCubit>(context).fetchTasks();
                   },
                 )
-              : IconButton(onPressed: () {}, icon: const Icon(Icons.more_horiz))
+              : const SizedBox(
+                  width: 50,
+                )
         ],
       ),
     );
